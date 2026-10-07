@@ -1,0 +1,111 @@
+{
+  "nombre": "Salim Charchaoui Oilad Ali",
+  "titulo": "Ingeniero Informático",
+  "ubicacion": "Almería",
+  "foto": "foto.jpg",
+  "contacto": {
+    "email": "salimalmeria12@gmail.com",
+    "github": "ualsco569",
+    "linkedin": "https://linkedin.com/in/salimcharchaoui"
+  },
+  "perfil": "Ingeniero Informático por la Universidad de Almería (promoción 2022–2026), a falta de la defensa del TFG y un par de asignaturas para finalizar el grado. Persona responsable, comprometida y con gran espíritu de equipo, curtido en entornos laborales exigentes (agricultura, hostelería y socorrismo) que me han aportado disciplina, constancia y capacidad para trabajar bajo presión. Con experiencia en prácticas curriculares en el sector TI, busco incorporarme a un equipo donde seguir creciendo profesionalmente y aportar valor desde el primer día.",
+  "formacion": [
+    {
+      "titulo": "Grado en Ingeniería Informática",
+      "centro": "Escuela Superior de Ingeniería · Universidad de Almería (UAL)",
+      "periodo": "2022 – 2026",
+      "detalle": "Pendiente de finalizar: trabajo fin de grado y un par de asignaturas."
+    },
+    {
+      "titulo": "Bachillerato de Ciencias",
+      "centro": "I.E.S Abdera · Adra, Almería",
+      "periodo": "2020 – 2022",
+      "detalle": ""
+    }
+  ],
+  "experiencia": [
+    {
+      "puesto": "Prácticas curriculares · Desarrollo y despliegue de software",
+      "empresa": "Memorare 39 SL (EnHomenaje)",
+      "periodo": "3 semanas · 100 h",
+      "puntos": [
+        "Despliegue desde cero de una aplicación .NET en servidor Ubuntu 22.04 (SSH): publicación, servicio systemd, Apache como reverse proxy, conexión a SQL Server, logs y arranque automático.",
+        "Repositorio privado en GitHub (sin credenciales) y documentación técnica: arquitectura, mapa del código, runbook de despliegue y guía de diagnóstico.",
+        "Cambio controlado en el sistema (campo fecha de nacimiento opcional: modelo, validaciones, frontend y manejo de nulos) mediante branch y pull request.",
+        "Análisis de workflows ocultos (misa del mes, aniversarios): exposición segura en test, informe de viabilidad y 3 propuestas de mejora de la plataforma."
+      ],
+      "tecnologias": [".NET", "SQL Server", "Ubuntu/Linux", "Apache", "systemd", "Git/GitHub"]
+    },
+    {
+      "puesto": "Socorrista",
+      "empresa": "Mario Park",
+      "periodo": "Últimos 3 veranos",
+      "puntos": [
+        "Vigilancia y prevención de riesgos, primeros auxilios y atención a usuarios.",
+        "Responsabilidad sobre la seguridad de las personas y coordinación con el equipo."
+      ],
+      "tecnologias": []
+    },
+    {
+      "puesto": "Trabajador en invernadero",
+      "empresa": "Sector agrícola",
+      "periodo": "≈ 5 años",
+      "puntos": [
+        "Tareas de campo y manipulación de cultivos con constancia y ritmo exigente.",
+        "Compatibilizado con los estudios, demostrando organización y capacidad de esfuerzo."
+      ],
+      "tecnologias": []
+    },
+    {
+      "puesto": "Camarero (barra)",
+      "empresa": "Entrefinos",
+      "periodo": "5 meses",
+      "puntos": [
+        "Atención directa al cliente, gestión de comandas y trabajo en equipo en horas punta."
+      ],
+      "tecnologias": []
+    }
+  ],
+  "idiomas": [
+    { "idioma": "Español", "nivel": "Nativo" },
+    { "idioma": "Árabe", "nivel": "Nativo" },
+    { "idioma": "Inglés", "nivel": "Nivel bueno" }
+  ],
+  "competencias": [
+    "Responsabilidad", "Compañerismo", "Trabajo en equipo", "Compromiso y fiabilidad",
+    "Capacidad de adaptación", "Resolutivo y proactivo", "Aprendizaje rápido", "Trabajo bajo presión"
+  ],
+  "habilidades": {
+    "Lenguajes": ["Java", "JavaScript", "SQL", "Bash", "PowerShell"],
+    "Desarrollo web / móvil": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "integración de APIs (Anthropic, Google Gemini)"],
+    "Bases de datos": ["MySQL"],
+    "Herramientas": ["Linux (Ubuntu Server, Debian, Kali)", "VMware", "Google Cloud Platform (gcloud CLI)", "SSH", "rsync", "cron", "Autopsy", "Visual Studio Code"],
+    "Otros": ["Administración de sistemas (LVM, RAID, cuotas de disco, copias de seguridad automatizadas)", "redes (VPN WireGuard, subredes, firewall)", "ciberseguridad (HIDS/NIDS con Snort y pfSense, análisis forense, ataques LFI/DoS en laboratorio)", "algoritmia (divide y vencerás, programación dinámica, voraces, backtracking, ramificación y poda)", "IA generativa"]
+  },
+  "proyectos": [
+    {
+      "nombre": "Rediseño web de Mario Park",
+      "descripcion": "Landing page completa en HTML y CSS para un parque acuático: atracciones, tarifas y llamadas a la acción.",
+      "tecnologias": ["HTML", "CSS"],
+      "enlace": ""
+    },
+    {
+      "nombre": "PresentaYA",
+      "descripcion": "Aplicación web que genera presentaciones PowerPoint con IA para estudiantes de colegio.",
+      "tecnologias": ["Node.js", "Express", "PptxGenJS", "API de IA"],
+      "enlace": ""
+    },
+    {
+      "nombre": "Infraestructura en Google Cloud",
+      "descripcion": "Servidor LAMP, red privada, VPN WireGuard, RAID, cuotas de disco y copias de seguridad automatizadas.",
+      "tecnologias": ["GCP", "Linux", "WireGuard", "Bash"],
+      "enlace": ""
+    },
+    {
+      "nombre": "Laboratorios de ciberseguridad",
+      "descripcion": "Detección de intrusiones con HIDS y NIDS (Snort, pfSense) y análisis de ataques LFI y DoS en entorno virtualizado.",
+      "tecnologias": ["Snort", "pfSense", "Kali", "Bash"],
+      "enlace": ""
+    }
+  ]
+}

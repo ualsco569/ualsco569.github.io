@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de {{ nombre }}, {{ titulo }}">
+  <title>{{ nombre }} | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  {% if foto %}
+    <img class="foto" src="{{ foto }}" alt="Foto de {{ nombre }}">
+  {% endif %}
+  <div>
+    <h1>{{ nombre }}</h1>
+    <p class="subtitulo">{{ titulo }} · {{ ubicacion }}</p>
+    <nav>
+      <a href="mailto:{{ contacto.email }}">Email</a>
+      <a href="https://github.com/{{ contacto.github }}">GitHub</a>
+      <a href="{{ contacto.linkedin }}">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section>
+      <h2>Perfil profesional</h2>
+      <p>{{ perfil }}</p>
+    </section>
+
+    <section>
+      <h2>Formación</h2>
+      {% for f in formacion %}
+        <div class="item">
+          <h3>{{ f.titulo }} <span class="periodo">{{ f.periodo }}</span></h3>
+          <p class="meta">{{ f.centro }}</p>
+          {% if f.detalle %}<p>{{ f.detalle }}</p>{% endif %}
+        </div>
+      {% endfor %}
+    </section>
+
+    <section>
+      <h2>Experiencia profesional</h2>
+      {% for x in experiencia %}
+        <div class="item">
+          <h3>{{ x.puesto }} <span class="periodo">{{ x.periodo }}</span></h3>
+          <p class="meta">{{ x.empresa }}</p>
+          <ul>
+            {% for punto in x.puntos %}<li>{{ punto }}</li>{% endfor %}
+          </ul>
+          {% if x.tecnologias %}
+            <p class="tags">{% for t in x.tecnologias %}<span>{{ t }}</span>{% endfor %}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </section>
+
+    <section>
+      <h2>Proyectos</h2>
+      <div class="grid">
+        {% for p in proyectos %}
+          <article class="tarjeta">
+            <h3>{{ p.nombre }}</h3>
+            <p>{{ p.descripcion }}</p>
+            <p class="tags">{% for t in p.tecnologias %}<span>{{ t }}</span>{% endfor %}</p>
+            {% if p.enlace %}<a href="{{ p.enlace }}">Ver proyecto</a>{% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section>
+      <h2>Habilidades técnicas</h2>
+      {% for categoria, lista in habilidades.items() %}
+        <p><strong>{{ categoria }}:</strong> {{ lista | join(", ") }}</p>
+      {% endfor %}
+    </section>
+
+    <section>
+      <h2>Idiomas</h2>
+      {% for i in idiomas %}
+        <p><strong>{{ i.idioma }}:</strong> {{ i.nivel }}</p>
+      {% endfor %}
+    </section>
+
+    <section>
+      <h2>Competencias</h2>
+      <p class="tags">{% for c in competencias %}<span>{{ c }}</span>{% endfor %}</p>
+    </section>
+  </main>
+</body>
+</html>
