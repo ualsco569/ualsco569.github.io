@@ -84,18 +84,7 @@
     "Otros": ["Administración de sistemas (LVM, RAID, cuotas de disco, copias de seguridad automatizadas)", "redes (VPN WireGuard, subredes, firewall)", "ciberseguridad (HIDS/NIDS con Snort y pfSense, análisis forense, ataques LFI/DoS en laboratorio)", "algoritmia (divide y vencerás, programación dinámica, voraces, backtracking, ramificación y poda)", "IA generativa"]
   },
   "proyectos": [
-    {
-      "nombre": "Rediseño web de Mario Park",
-      "descripcion": "Landing page completa en HTML y CSS para un parque acuático: atracciones, tarifas y llamadas a la acción.",
-      "tecnologias": ["HTML", "CSS"],
-      "enlace": ""
-    },
-    {
-      "nombre": "PresentaYA",
-      "descripcion": "Aplicación web que genera presentaciones PowerPoint con IA para estudiantes de colegio.",
-      "tecnologias": ["Node.js", "Express", "PptxGenJS", "API de IA"],
-      "enlace": ""
-    },
+
     {
       "nombre": "Infraestructura en Google Cloud",
       "descripcion": "Servidor LAMP, red privada, VPN WireGuard, RAID, cuotas de disco y copias de seguridad automatizadas.",
