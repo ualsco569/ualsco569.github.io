@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CV {{ nombre }}</title>
+  <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+  <aside>
+    {% if foto %}<img class="foto" src="{{ foto }}" alt="">{% endif %}
+    <h1>{{ nombre }}</h1>
+    <p class="rol">{{ titulo }}</p>
+
+    <h2>Contacto</h2>
+    {% if telefono %}<p class="label">Teléfono</p><p>{{ telefono }}</p>{% endif %}
+    <p class="label">Email</p><p>{{ contacto.email }}</p>
+    <p class="label">Ubicación</p><p>{{ ubicacion }}</p>
+    <p class="label">LinkedIn</p><p>{{ contacto.linkedin | replace("https://", "") }}</p>
+    <p class="label">GitHub</p><p>github.com/{{ contacto.github }}</p>
+    {% if web %}<p class="label">Web</p><p>{{ web }}</p>{% endif %}
+
+    <h2>Idiomas</h2>
+    {% for i in idiomas %}<p>{{ i.idioma }} · {{ i.nivel }}</p>{% endfor %}
+
+    <h2>Competencias</h2>
+    <ul>{% for c in competencias %}<li>{{ c }}</li>{% endfor %}</ul>
+  </aside>
+
+  <main>
+    <h2>Perfil profesional</h2>
+    <p class="perfil">{{ perfil }}</p>
+
+    <h2>Formación</h2>
+    {% for f in formacion %}
+      <h3>{{ f.titulo }}<span class="periodo">{{ f.periodo }}</span></h3>
+      <p class="centro">{{ f.centro }}</p>
+      {% if f.detalle %}<ul><li>{{ f.detalle }}</li></ul>{% endif %}
+    {% endfor %}
+
+    <h2>Experiencia profesional</h2>
+    {% for x in experiencia %}
+      <h3>{{ x.puesto }}<span class="periodo">{{ x.periodo }}</span></h3>
+      <p class="centro">{{ x.empresa }}</p>
+      <ul>{% for p in x.puntos %}<li>{{ p }}</li>{% endfor %}</ul>
+      {% if x.tecnologias %}
+        <p class="tec"><strong>Tecnologías:</strong> {{ x.tecnologias | join(" · ") }}</p>
+      {% endif %}
+    {% endfor %}
+
+    <h2>Habilidades técnicas</h2>
+    {% for categoria, lista in habilidades.items() %}
+      <p class="hab"><strong>{{ categoria }}:</strong> {{ lista | join(", ") }}</p>
+    {% endfor %}
+  </main>
+</body>
+</html>

@@ -1,2 +1,6 @@
 .venv/
 __pycache__/
+datos_privados.json
+cv.html
+salida/
+.edge-tmp/
