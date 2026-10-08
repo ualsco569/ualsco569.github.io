@@ -84,7 +84,12 @@
     "Otros": ["Administración de sistemas (LVM, RAID, cuotas de disco, copias de seguridad automatizadas)", "redes (VPN WireGuard, subredes, firewall)", "ciberseguridad (HIDS/NIDS con Snort y pfSense, análisis forense, ataques LFI/DoS en laboratorio)", "algoritmia (divide y vencerás, programación dinámica, voraces, backtracking, ramificación y poda)", "IA generativa"]
   },
   "proyectos": [
-
+    {
+      "nombre": "Generador de portfolio y CV en Python",
+      "descripcion": "Esta misma web: un script lee los datos de un único JSON y genera tanto la página publicada en GitHub Pages como el CV en PDF, con plantillas Jinja2 y diseño responsive con modo oscuro.",
+      "tecnologias": ["Python", "Jinja2", "HTML", "CSS", "GitHub Pages"],
+      "enlace": "https://github.com/ualsco569/ualsco569.github.io"
+    },
     {
       "nombre": "Infraestructura en Google Cloud",
       "descripcion": "Servidor LAMP, red privada, VPN WireGuard, RAID, cuotas de disco y copias de seguridad automatizadas.",
